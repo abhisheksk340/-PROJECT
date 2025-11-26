@@ -1,0 +1,7 @@
+{
+  "name": "MealBridge",
+  "description": "A food rescue platform connecting restaurants with surplus food to shelters and NGOs in real-time.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

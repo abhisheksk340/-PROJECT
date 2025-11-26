@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealBridge - Share Food, Save Lives | Surplus Food Donation Platform</title>
+    <meta name="description" content="MealBridge connects restaurants with surplus food to local shelters and NGOs in real-time. Join our zero-waste network to fight hunger." />
+    <meta name="keywords" content="food donation, zero waste, hunger relief, NGO, restaurant surplus, food rescue, MealBridge, DSCASC" />
+    <meta name="author" content="Abhishek SK" />
+    <meta name="theme-color" content="#059669" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mealbridge.app/" />
+    <meta property="og:title" content="MealBridge - Share Food, Save Lives" />
+    <meta property="og:description" content="Turn surplus into sustenance. Connect your restaurant's extra food with local shelters instantly." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mealbridge.app/" />
+    <meta property="twitter:title" content="MealBridge - Share Food, Save Lives" />
+    <meta property="twitter:description" content="Turn surplus into sustenance. Connect your restaurant's extra food with local shelters instantly." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              emerald: {
+                600: '#059669',
+              },
+              amber: {
+                500: '#F59E0B',
+              },
+              stone: {
+                50: '#FAFAF9',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d5db; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af; 
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.3s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      /* Confetti Animations */
+      @keyframes fall {
+        0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+      }
+      .animate-fall {
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes pop-scale {
+        0% { transform: scale(0); opacity: 0; }
+        50% { transform: scale(1.2); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-pop {
+        animation: pop-scale 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+      
+      .animate-bounce-in {
+          animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      @keyframes bounceIn {
+          0% { transform: scale(0.3); opacity: 0; }
+          50% { transform: scale(1.05); opacity: 1; }
+          70% { transform: scale(0.9); }
+          100% { transform: scale(1); opacity: 1; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-stone-50 text-slate-800 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
